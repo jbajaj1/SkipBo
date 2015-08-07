@@ -10,8 +10,7 @@ Final Project
 
 -------------------------------Extra Credit--------------------------------
 Undo/Redo-
-- our undo and redo commands work flawlessly
-- we think we deserve the full 15/15
+- our undo and redo commands work within only the same player's move
 
 Hard AI-
 - this AI takes into account the player to their left's stock pile
@@ -25,7 +24,6 @@ Hard AI-
   each of their moves
 - we tested the AI strategies in real life by having one player strictly
   play by the AI rules and he won consistently
-- we think we deserve a 15/15 
 ---------------------------------------------------------------------------
 
 
