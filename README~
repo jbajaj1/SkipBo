@@ -1,0 +1,81 @@
+Achintya Gopal
+agopal2@jhu.edu
+
+Paul Watson
+William Watson
+Joshan Bajaj
+
+600.120
+Final Project
+
+-------------------------------Extra Credit--------------------------------
+Undo/Redo-
+- our undo and redo commands work flawlessly
+- we think we deserve the full 15/15
+
+Hard AI-
+- this AI takes into account the player to their left's stock pile
+- depending on the difference between its and the left player's stock
+  pile sizes, it will choose different strategies depending on how
+  aggressive it needs to play
+- the different levels of aggression dictates if the primary goal is to
+  block their opponent or get rid of stock pile cards
+- the strategies were developed by playing several Skip-Bo games with large
+  number of players and seeing what went through each player's mind with
+  each of their moves
+- we tested the AI strategies in real life by having one player strictly
+  play by the AI rules and he won consistently
+- we think we deserve a 15/15 
+---------------------------------------------------------------------------
+
+
+To Compile:
+- enter command "make"
+
+To Test:
+- enter command "make test"
+- extraneous output goes to mainTestOutput.txt
+
+To Clean:
+- enter command "make clean"
+
+To Play:
+- enter command "./SkipBo" (or "make play" to compile and play at once)
+- starting new game:
+  - enter difficulty level
+  - enter number of players (including both humans and computers)
+  - enter number of human players
+  - enter size of initial stock pile
+  - enter names for each human player
+                                              <--------Build Piles--------->
+                                      ------
+                                      |?  ?|  ------  ------  ------  ------
+                                      | ?? |  | 09 |  |    |  | 11 |  | 04 |
+                                      | ?? |  |    |  |    |  |    |  |    |
+                                      |?  ?|  ------  ------  ------  ------
+                                      ------     A       B       C       D
+
+
+
+                      <-----------Your hand------------>    Your Discard Piles        05 <--Size of Stock Pile
+                      ------ ------ ------ ------ ------     (empty at start)      --------
+                      |    | |    | |    | |    | |    |    ---- ---- ---- ----    |      |
+        Card value--->| 10 | | 06 | | 08 | | 04 | | 02 |    |  | |  | |  | |  |    |  SB  |
+                      |    | |    | |    | |    | |    |    ---- ---- ---- ----    |      |
+                      ------ ------ ------ ------ ------      6    7    8    9     --------
+                         1      2      3      4      5                                 0
+                                                          Paul
+  - the number underneath each card slot represent the slot's unique index, the build piles in the center are the same (but with A-D)
+  - to move, enter the index for the card you would like to move
+             then enter the index for the card slot you would like to move to
+  - press 'e' to exit
+  - press 's' to save
+  - press 'u' to undo a move
+  - press 'r' to redo a move
+  - only easy AI turns are printed to add extra challenge to hard AI
+- loading game:
+  - select load game and then play as usual
+- help
+  - show the rules of the game
+- Note:
+  [Powered by MathLens is an inside joke]
